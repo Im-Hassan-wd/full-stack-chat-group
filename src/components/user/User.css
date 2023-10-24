@@ -1,0 +1,48 @@
+.user .material-symbols-outlined {
+  font-size: 18px;
+}
+.user {
+  position: relative;
+  margin-top: auto;
+  background: #0b090c;
+  padding: 10px 20px;
+}
+.user .main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.user .more {
+  padding: 10px;
+  position: absolute;
+  border: 1px solid #3c393f;
+  background: var(--dark-75);
+  bottom: 80%;
+  right: 5%;
+  border-radius: 8px;
+}
+.user li {
+  padding: 8px;
+  margin-bottom: 5px;
+  width: 150px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.user li:hover {
+  background: var(--dark-10);
+}
+.user li.logout {
+  color: var(--danger);
+  padding-top: 10px;
+  border-radius: 0px;
+  border-top: 1px solid var(--dark-10);
+  margin-top: 10px;
+}
+.user button {
+  background: none;
+  border: none;
+  margin-left: auto;
+}

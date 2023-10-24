@@ -1,0 +1,83 @@
+.sidebar {
+  background: var(--dark-100);
+  width: 400px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar header {
+  height: 8vh;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 10px #000;
+  gap: 5px;
+}
+.sidebar header button {
+  background: var(--dark-75);
+  font-size: 1.5rem;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar header button.add-group {
+  margin-left: auto;
+}
+.sidebar .channels,
+.channel-info {
+  padding: 0 20px;
+}
+.sidebar .channel,
+.channel-members li {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  background: none;
+  margin: 5px 0;
+  font-size: 15px;
+}
+.sidebar .channel:hover {
+  background: var(--dark-75);
+}
+.channel-cover {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: var(--dark-75);
+  margin-right: 10px;
+}
+.channel-name {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.channel-info {
+  margin: 20px 0;
+}
+.channel-info .channel-name {
+  margin: 15px 0;
+  font-weight: 500;
+}
+.channel-description {
+  font-size: 15px;
+}
+.channel-members {
+  margin-top: 30px;
+}
+.channel-members li {
+  padding: 5px 0;
+  margin-bottom: 0;
+}
+.channel-members span {
+  margin-left: 10px;
+}
+.channel-members h4 {
+  margin-bottom: 15px;
+}

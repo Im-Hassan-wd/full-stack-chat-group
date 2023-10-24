@@ -1,0 +1,24 @@
+.searchbar {
+  padding: 0px 20px;
+  margin: 20px 0;
+}
+.searchbar-container {
+  display: flex;
+  align-items: center;
+  background: var(--dark-10);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.searchbar input {
+  margin-left: 10px;
+  height: 100%;
+  border: none;
+  width: 100px;
+  outline: none;
+  background: none;
+  color: var(--white);
+}
+.searchbar svg {
+  width: 20px;
+  color: var(--white);
+}

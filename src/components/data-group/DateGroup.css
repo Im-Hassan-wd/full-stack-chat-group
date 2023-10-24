@@ -1,0 +1,17 @@
+.date-group {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.date-group span {
+  height: 1px;
+  width: 100%;
+  background: var(--dark-10);
+}
+.date-group small {
+  color: var(--dark-50);
+  margin: 0 10px;
+  width: 160px;
+  font-size: 10px;
+}
