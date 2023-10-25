@@ -11,6 +11,7 @@ export default function User() {
   const [showSnackbar, setShowSnackbar] = useState(false);
   const { logout } = useLogout();
   const { user } = useAuthContext();
+  // const {dispatch}
 
   const handleClick = (e) => {
     logout();

@@ -19,6 +19,8 @@
 .messages {
   padding: 0 40px;
   margin: 25px 0;
+  height: 100%;
+  overflow-y: scroll;
 }
 .message {
   margin-bottom: 20px;
