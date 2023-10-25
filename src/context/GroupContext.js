@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react";
+import { createContext, useEffect, useReducer } from "react";
 
 export const GroupsContext = createContext();
 
@@ -20,7 +20,9 @@ export const GroupsContextProvider = ({ children }) => {
     groups: null,
   });
 
-  // console.log("GroupContext state: ", state);
+  useEffect(() => {
+    console.log("GroupContext state: ", state);
+  }, [dispatch]);
 
   return (
     <GroupsContext.Provider value={{ ...state, dispatch }}>
