@@ -31,7 +31,7 @@ export default function GroupDetails() {
     if (user) {
       fetchGroup();
     }
-  }, [id, dispatch, user]);
+  }, [id, group, user]);
   return (
     <div className="group-details">
       <Sidebar isOpen={true} group={group} groups={[]} setShowForm={""} />

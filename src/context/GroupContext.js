@@ -20,10 +20,6 @@ export const GroupsContextProvider = ({ children }) => {
     groups: null,
   });
 
-  useEffect(() => {
-    console.log("GroupContext state: ", state);
-  }, [dispatch]);
-
   return (
     <GroupsContext.Provider value={{ ...state, dispatch }}>
       {children}
