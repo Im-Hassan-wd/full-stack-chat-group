@@ -22,6 +22,9 @@ export default function Sidebar({ isOpen, groups, setShowForm, group }) {
             <span className="material-symbols-outlined">arrow_back_ios</span>
           </Link>
           <div className="">All channels</div>
+          <button className="close">
+            <span className="material-symbols-outlined">close</span>
+          </button>
         </header>
       ) : (
         <header>

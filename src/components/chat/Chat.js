@@ -15,6 +15,9 @@ export default function Chat({ group }) {
   return (
     <div className="chat">
       <header>
+        <button className="burger">
+          <span className="material-symbols-outlined">menu</span>
+        </button>
         <div className="chat-name">{group?.name}</div>
       </header>
       <ul className="messages">
