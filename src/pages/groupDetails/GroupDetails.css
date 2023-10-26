@@ -4,8 +4,8 @@
 
 @media (max-width: 720px) {
   .group-details .sidebar {
-    /* display: none; */
-    width: initial;
+    display: none;
+    width: 100%;
     position: absolute;
     z-index: 10;
   }

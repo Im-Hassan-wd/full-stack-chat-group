@@ -7,8 +7,10 @@ import Photo from "../../assets/weird.png";
 import Searchbar from "../searchbar/Searchbar";
 import User from "../user/User";
 import Avatar from "../avatar/Avatar";
+import { useState } from "react";
 
 export default function Sidebar({ isOpen, groups, setShowForm, group }) {
+  const [active, setActive] = useState(false);
   const getFirstLetters = (name) => {
     const words = name.split(" ");
     return words.map((word) => word.charAt(0)).join("");
@@ -22,7 +24,7 @@ export default function Sidebar({ isOpen, groups, setShowForm, group }) {
             <span className="material-symbols-outlined">arrow_back_ios</span>
           </Link>
           <div className="">All channels</div>
-          <button className="close">
+          <button className="close" onclick={() => setActive(false)}>
             <span className="material-symbols-outlined">close</span>
           </button>
         </header>
