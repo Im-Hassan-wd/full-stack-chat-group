@@ -25,3 +25,9 @@
   height: 40px;
   width: 45px;
 }
+@media (max-width: 720px) {
+  .input-div {
+    margin: 0 10px;
+    margin-bottom: 15px;
+  }
+}

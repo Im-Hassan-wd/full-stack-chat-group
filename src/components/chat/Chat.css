@@ -7,6 +7,7 @@
 .chat header {
   display: flex;
   align-items: center;
+  min-height: 8vh;
   height: 8vh;
   padding: 10px 40px;
   width: 100%;
@@ -40,4 +41,11 @@
 .time {
   color: #828282;
   font-size: 12px;
+}
+@media (max-width: 720px) {
+  .chat header,
+  .messages {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

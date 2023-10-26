@@ -1,3 +1,15 @@
 .group-details {
   display: flex;
 }
+
+@media (max-width: 720px) {
+  .group-details .sidebar {
+    display: none;
+    position: absolute;
+    z-index: 10;
+  }
+  .group-details .chat {
+    position: absolute;
+    width: 100%;
+  }
+}
