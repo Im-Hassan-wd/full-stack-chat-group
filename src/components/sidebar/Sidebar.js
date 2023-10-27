@@ -17,14 +17,14 @@ export default function Sidebar({ isOpen, groups, setShowForm, group }) {
   };
 
   return (
-    <aside className="sidebar">
+    <aside className={active ? "sidebar active" : "sidebar"}>
       {isOpen ? (
         <header>
           <Link to="/">
             <span className="material-symbols-outlined">arrow_back_ios</span>
           </Link>
           <div className="">All channels</div>
-          <button className="close" onclick={() => setActive(false)}>
+          <button className="close" onClick={() => setActive(false)}>
             <span className="material-symbols-outlined">close</span>
           </button>
         </header>
