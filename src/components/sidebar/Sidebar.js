@@ -31,7 +31,7 @@ export default function Sidebar({ isOpen, groups, setShowForm, group }) {
       ) : (
         <header>
           <div className="">Channels</div>
-          <button className="add-group" onClick={() => setShowForm(true)}>
+          <button className="add-channel" onClick={() => setShowForm(true)}>
             +
           </button>
         </header>
@@ -57,7 +57,10 @@ export default function Sidebar({ isOpen, groups, setShowForm, group }) {
           <div className="channel-name">{group?.name}</div>
           <p className="channel-description">{group?.description}</p>
           <ul className="channel-members">
-            <h4>Members</h4>
+            <div className="member-head">
+              <h4>Members</h4>
+              <button className="add-member">+</button>
+            </div>
             <li>
               <Avatar src={Photo} />
               <span>Nellie Francis</span>

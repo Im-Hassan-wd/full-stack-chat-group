@@ -30,7 +30,7 @@
   justify-content: center;
   align-items: center;
 }
-.sidebar header button.add-group {
+.sidebar header button.add-channel {
   margin-left: auto;
 }
 .sidebar .channels,
@@ -88,6 +88,11 @@
 }
 .channel-members h4 {
   margin-bottom: 15px;
+}
+.member-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (max-width: 720px) {
