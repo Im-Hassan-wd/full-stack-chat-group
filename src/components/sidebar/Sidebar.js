@@ -9,8 +9,14 @@ import User from "../user/User";
 import Avatar from "../avatar/Avatar";
 import { useState } from "react";
 
-export default function Sidebar({ isOpen, groups, setShowForm, group }) {
-  const [active, setActive] = useState(false);
+export default function Sidebar({
+  isOpen,
+  groups,
+  setShowForm,
+  group,
+  active,
+  setActive,
+}) {
   const getFirstLetters = (name) => {
     const words = name.split(" ");
     return words.map((word) => word.charAt(0)).join("");

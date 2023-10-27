@@ -9,13 +9,13 @@ import Input from "../input/Input";
 import DateGroup from "../data-group/DateGroup";
 import Avatar from "../avatar/Avatar";
 
-export default function Chat({ group }) {
+export default function Chat({ group, active, setActive }) {
   const { getDate } = formatDate();
 
   return (
     <div className="chat">
       <header>
-        <button className="burger">
+        <button className="burger" onClick={() => setActive(true)}>
           <span className="material-symbols-outlined">menu</span>
         </button>
         <div className="chat-name">{group?.name}</div>

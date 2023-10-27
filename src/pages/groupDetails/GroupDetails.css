@@ -9,6 +9,9 @@
     position: absolute;
     z-index: 10;
   }
+  .group-details .sidebar.active {
+    display: flex;
+  }
   .group-details .chat {
     position: absolute;
     width: 100%;

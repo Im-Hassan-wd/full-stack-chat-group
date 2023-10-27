@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useGroupsContext } from "../../hooks/useGroupsContext";
 
@@ -10,6 +10,7 @@ import Chat from "../../components/chat/Chat";
 import { useAuthContext } from "../../hooks/useAuthContext";
 
 export default function GroupDetails() {
+  const [active, setActive] = useState(false);
   const { id } = useParams();
   const { group, dispatch } = useGroupsContext();
   const { user } = useAuthContext();
@@ -34,8 +35,15 @@ export default function GroupDetails() {
   }, [id, group, user]);
   return (
     <div className="group-details">
-      <Sidebar isOpen={true} group={group} groups={[]} setShowForm={""} />
-      <Chat group={group} />
+      <Sidebar
+        isOpen={true}
+        group={group}
+        groups={[]}
+        setShowForm={""}
+        active={active}
+        setActive={setActive}
+      />
+      <Chat group={group} active={active} setActive={setActive} />
     </div>
   );
 }
