@@ -17,11 +17,14 @@ export default function GroupDetails() {
 
   useEffect(() => {
     const fetchGroup = async () => {
-      const response = await fetch("/api/groups/" + id, {
-        headers: {
-          Authorization: `Bearer ${user.token}`,
-        },
-      });
+      const response = await fetch(
+        "https://full-stack-chat-group-backend.vercel.app/api/groups/" + id,
+        {
+          headers: {
+            Authorization: `Bearer ${user.token}`,
+          },
+        }
+      );
       const json = await response.json();
 
       if (response.ok) {

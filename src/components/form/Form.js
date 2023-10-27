@@ -30,14 +30,17 @@ export default function Form({ setShowForm }) {
 
     const group = { name, description, members };
 
-    const response = await fetch("/api/groups", {
-      method: "POST",
-      body: JSON.stringify(group),
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${user.token}`,
-      },
-    });
+    const response = await fetch(
+      "https://full-stack-chat-group-backend.vercel.app/api/groups",
+      {
+        method: "POST",
+        body: JSON.stringify(group),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${user.token}`,
+        },
+      }
+    );
     const json = await response.json();
 
     if (!response.ok) {
