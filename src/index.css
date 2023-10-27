@@ -10,6 +10,18 @@
   --danger: #eb5757;
   --white: #e0e0e0;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark-75);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--dark-50);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-10);
+}
 * {
   margin: 0;
   padding: 0;
