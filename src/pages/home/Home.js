@@ -15,12 +15,9 @@ export default function Home() {
 
   useEffect(() => {
     const fetchGroups = async () => {
-      const response = await fetch(
-        "https://full-stack-chat-group-backend.vercel.app/api/groups",
-        {
-          headers: { Authorization: `Bearer ${user.token}` },
-        }
-      );
+      const response = await fetch("/api/groups", {
+        headers: { Authorization: `Bearer ${user.token}` },
+      });
       const json = await response.json();
 
       if (response.ok) {

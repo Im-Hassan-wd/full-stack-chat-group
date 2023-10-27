@@ -10,20 +10,11 @@ export const useSignup = () => {
     setIsPending(true);
     setError(null);
 
-    const response = await fetch(
-      "https://full-stack-chat-group-backend.vercel.app/api/user/signup",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          displayName,
-          email,
-          password,
-          photoURL,
-          online,
-        }),
-      }
-    );
+    const response = await fetch("api/user/signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ displayName, email, password, photoURL, online }),
+    });
     const json = await response.json();
 
     if (!response.ok) {
