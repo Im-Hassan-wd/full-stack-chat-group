@@ -62,7 +62,12 @@ export default function Form({ setShowForm }) {
     <div className="form-overlay">
       <div className="form-container">
         <form className="group-form" onSubmit={handleSubmit}>
-          <h4>New Channel</h4>
+          <div className="form-title">
+            <h4>New Channel</h4>
+            <button className="close">
+              <span className="material-symbols-outlined">close</span>
+            </button>
+          </div>
           <input
             type="text"
             placeholder="Channel name"
@@ -76,7 +81,11 @@ export default function Form({ setShowForm }) {
             value={description}
             className={emptyFields.includes("description") ? "error" : ""}
           ></textarea>
-          {isPending ? <button>Saving...</button> : <button>Save</button>}
+          {isPending ? (
+            <button className="submit">Saving...</button>
+          ) : (
+            <button className="submit">Save</button>
+          )}
           {error && <div className="error">{error}</div>}
         </form>
       </div>
