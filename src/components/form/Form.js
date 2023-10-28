@@ -64,9 +64,13 @@ export default function Form({ setShowForm }) {
         <form className="group-form" onSubmit={handleSubmit}>
           <div className="form-title">
             <h4>New Channel</h4>
-            <button className="close">
+            <div
+              role="button"
+              className="close btn"
+              onClick={() => setShowForm(false)}
+            >
               <span className="material-symbols-outlined">close</span>
-            </button>
+            </div>
           </div>
           <input
             type="text"
